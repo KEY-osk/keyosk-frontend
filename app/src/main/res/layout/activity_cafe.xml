@@ -9,45 +9,50 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="카페"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="72dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="70dp" />
 
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="520dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="206dp">
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="213dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="310dp"
+                android:layout_height="103dp"
                 android:text="매머드익스프레스" />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="310dp"
+                android:layout_height="103dp"
                 android:text="할리스커피" />
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="310dp"
+                android:layout_height="103dp"
                 android:text="투썸플레이스" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="310dp"
+                android:layout_height="103dp"
                 android:text="메가커피" />
         </LinearLayout>
     </ScrollView>

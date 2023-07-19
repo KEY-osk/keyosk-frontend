@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6F6F6"
     tools:context=".MainActivity">
 
     <TextView
@@ -31,11 +32,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.371" />
+    <View
+        android:id="@+id/cafe_page_view_top"
+        android:layout_width="415dp"
+        android:layout_height="242dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="3.35dp"
+        tools:ignore="MissingConstraints" />
 
     <HorizontalScrollView
         android:layout_width="408dp"
         android:layout_height="150dp"
         android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,15 +60,27 @@
         app:layout_constraintVertical_bias="0.135">
 
         <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/moveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/movePageButton"/>
+
+            <Button
                 android:id="@+id/button"
-                android:layout_width="114dp"
-                android:layout_height="92dp"
+                android:layout_width="220dp"
+                android:layout_height="105dp"
                 android:layout_margin="10dp"
                 android:elevation="20dp"
                 android:text="카페" />
@@ -71,5 +100,4 @@
                 android:text="기타" />
         </LinearLayout>
     </HorizontalScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
