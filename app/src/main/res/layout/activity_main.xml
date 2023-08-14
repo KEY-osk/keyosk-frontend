@@ -10,13 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kiosk_grey_01"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-28dp"
-        tools:layout_editor_absoluteY="-274dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_height="112dp"
             android:background="@color/kiosk_white"
             app:contentInsetStart="0dp"
             app:layout_scrollFlags="scroll|enterAlways"
@@ -44,7 +44,6 @@
                 tools:ignore="MissingConstraints" />
 
         </androidx.appcompat.widget.Toolbar>
-
 
         <ScrollView
             android:layout_width="match_parent"

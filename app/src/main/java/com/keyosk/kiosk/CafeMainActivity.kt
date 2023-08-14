@@ -7,6 +7,6 @@ class CafeMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cafe_click)
+        setContentView(R.layout.activity_cafe)
     }
 }

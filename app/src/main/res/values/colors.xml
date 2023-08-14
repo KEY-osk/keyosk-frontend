@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="kiosk_purple">#7d22ff</color>
+    <color name="kiosk_splash">#899AD9</color>
     <color name="kiosk_pink_01">#66e062ff</color>
     <color name="kiosk_pink_02">#11e062ff</color>
     <color name="kiosk_gradient_purple">#6b19ff</color>

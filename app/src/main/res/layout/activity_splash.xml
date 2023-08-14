@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/Splash_background"
-    android:background="@color/splash"
+    android:background="@color/kiosk_splash"
     android:elevation="4dp"
     tools:ignore="MissingConstraints">
 
@@ -52,7 +52,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
+        android:background="@color/kiosk_white"
         android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
