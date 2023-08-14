@@ -9,10 +9,10 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/kiosk_grey_01"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-28dp"
-        tools:layout_editor_absoluteY="-274dp"
-        android:background="@color/kiosk_grey_01">
+        tools:layout_editor_absoluteY="-274dp">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
@@ -136,9 +136,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginVertical="15dp"
             app:cardCornerRadius="5dp">
 
             <LinearLayout
@@ -167,9 +167,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginVertical="15dp"
             app:cardCornerRadius="5dp">
 
             <LinearLayout
@@ -198,9 +198,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginVertical="15dp"
             app:cardCornerRadius="5dp">
 
             <LinearLayout
