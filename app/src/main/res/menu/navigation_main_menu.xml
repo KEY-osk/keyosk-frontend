@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_category"
+        android:title="@string/label_cafe_icon" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="@string/label_fastfood_icon" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:title="@string/label_etc_icon" />
+</menu>

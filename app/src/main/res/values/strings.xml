@@ -4,4 +4,10 @@
     <string name="kiosk_">Kiosk 도우미</string>
     <string name="splash_top">디지털 약자들을 위한</string>
     <string name="cafe">카페</string>
+    <string name="description_product_thumbnail">상품 상세 대표 이미지</string>
+    <string name="title_product_detail_image">상품설명</string>
+    <string name="description_product_detail_image">상품 상세 이미지</string>
+    <string name="label_cafe_icon">카페</string>
+    <string name="label_fastfood_icon">패스트푸드</string>
+    <string name="label_etc_icon">기타</string>
 </resources>
