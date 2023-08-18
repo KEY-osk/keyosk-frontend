@@ -8,6 +8,7 @@
     <color name="kiosk_black_01">#000000</color>
     <color name="kiosk_black_02">#111111</color>
     <color name="kiosk_grey_01">#F6F6F6</color>
+    <color name="kiosk_grey_02">#F5F5F5</color>
     <color name="kiosk_bluegrey">#f2f4f6</color>
     <color name="kiosk_white">#ffffff</color>
     <color name="kiosk_brown">#967a6d</color>
