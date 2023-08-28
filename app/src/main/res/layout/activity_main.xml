@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,31 +14,42 @@
 
 
         <TextView
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="KIOSK"
-            android:textStyle="bold"
-            android:textSize="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="26dp"
-            android:layout_marginLeft="25dp" />
+            android:text="KIOSK"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="26dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="도우미"
-            android:textSize="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="26dp"
-            android:layout_marginLeft="8dp" />
-
-
+            android:text="도우미"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="26dp" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categry_RecyclerView"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:orientation="horizontal"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categry_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_category_list" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,29 +57,32 @@
         android:layout_marginBottom="15dp">
 
         <TextView
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="가장 어려운"
-            android:textSize="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="26dp"
-            android:layout_marginLeft="25dp" />
+            android:text="가장 어려운"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="26dp" />
 
         <TextView
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="키오스크"
-            android:textStyle="bold"
-            android:textSize="26dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="26dp"
-            android:layout_marginLeft="8dp" />
+            android:text="키오스크"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="26dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rank_RecyclerView2"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_type_list" />
 
 </LinearLayout>

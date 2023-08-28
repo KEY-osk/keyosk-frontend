@@ -9,8 +9,10 @@
     <color name="kiosk_black_02">#111111</color>
     <color name="kiosk_grey_01">#F6F6F6</color>
     <color name="kiosk_grey_02">#F5F5F5</color>
+    <color name="kioksk_option">#323335</color>
     <color name="kiosk_bluegrey">#f2f4f6</color>
     <color name="kiosk_white">#ffffff</color>
     <color name="kiosk_brown">#967a6d</color>
     <color name="kiosk_click_purple">#899AD9</color>
+    <color name="kiosk_order_top">#323335</color>
 </resources>

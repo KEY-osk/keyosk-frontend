@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kiosk_white"
+    tools:ignore="Orientation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:background="@color/kiosk_white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="키오스크 사용경험 관련 설문조사"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:layout_marginLeft="0dp"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="143dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 키오스크 사용경험 관련 설문조사"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="아니요" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 키오스크주문을 대면주문보다 선호하십니까?"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="아니요" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 1주에 키오스크를 얼마나 사용하십니까?"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    a.  사용안함"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    b.  1~2회"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    c.  3~4회"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    d.  5~6회"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    e.  7회 이상"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 주로 누구와 키오스크를 이용하십니까?"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    a.  사용안함"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    b.  혼자"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    c.  가족"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    d.  기타"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 주로 어느 시간대에 방문하십니까?"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    a.  9:00~12:00"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    b.  12:00~15:00"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    c.  15:00~18:00"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:layout_width="340dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_survey"
+                    android:gravity="left"
+                    android:text="    d.  18:00~22:00"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,31 +7,17 @@
     android:background="@color/kiosk_white"
     tools:ignore="Orientation">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@color/kiosk_white"
+        android:gravity="center"
+        android:text="매머드익스프레스"
+        android:textColor="@color/kiosk_black_01"
+        android:textSize="35dp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="82dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="매머드익스프레스"
-            android:textColor="@color/kiosk_black_01"
-            android:textSize="35dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-    </LinearLayout>
+        android:layout_marginTop="35dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
