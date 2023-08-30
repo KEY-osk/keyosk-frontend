@@ -7,13 +7,14 @@
     android:background="#ffffff"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:layout_marginBottom="5dp">
 
 
     <TextView
         android:id="@+id/rank1_title"
-        android:layout_width="96dp"
-        android:layout_height="80dp"
+        android:layout_width="113dp"
+        android:layout_height="127dp"
         android:padding="5dp"
         android:text="카페"
         android:textColor="@color/kiosk_black_01"

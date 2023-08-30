@@ -117,9 +117,9 @@
                 android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/btn_select"
+                android:background="@drawable/btn_invisible"
                 android:text="신메뉴"
-                android:textColor="@color/kiosk_black_01"
+                android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
 
             <Button
@@ -131,9 +131,9 @@
                 android:layout_column="2"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/btn_invisible"
+                android:background="@drawable/btn_select"
                 android:text="커피"
-                android:textColor="@color/kiosk_white"
+                android:textColor="@color/kiosk_black_01"
                 android:textSize="8sp" />
 
             <Button
