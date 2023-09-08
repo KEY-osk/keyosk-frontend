@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/kiosk_grey_01">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -16,21 +17,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="26dp"
-            android:text="KIOSK"
+            android:layout_margin="25dp"
+            android:text="KIOSK\nHELPER"
             android:textColor="@color/kiosk_black_01"
             android:textSize="26dp"
             android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="26dp"
-            android:text="도우미"
-            android:textColor="@color/kiosk_black_01"
-            android:textSize="26dp" />
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -47,7 +38,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_category_list" />
+                tools:listitem="@layout/item_category_list"
+                android:padding="5dp"/>
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 

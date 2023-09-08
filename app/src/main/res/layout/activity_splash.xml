@@ -5,61 +5,30 @@
     android:id="@+id/Splash_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/kiosk_splash"
     android:elevation="4dp"
-    tools:ignore="MissingConstraints">
+    tools:ignore="MissingConstraints"
+    android:background="@color/kiosk_splash">
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
     <TextView
-        android:id="@+id/kiosk_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:gravity="center_vertical"
-        android:text="@string/kiosk_"
-        android:textAppearance="@style/kiosk_"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        android:padding="30dp"
+        android:text="Kiosk\nHelper"
+        android:textColor="@color/kiosk_white"
+        android:layout_marginLeft="20dp"
+        android:textSize="65dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!--
-      Font family: Inter
-      Line height: 34sp
-      -->
 
-    <TextView
-        android:id="@+id/some_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/splash_top"
-        android:textAppearance="@style/some_id"
+    <ImageView
+        android:layout_marginTop="580dp"
+        android:layout_width="567dp"
+        android:layout_height="662dp"
+        android:src="@drawable/item_spalsh"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
+        tools:layout_editor_absoluteX="-24dp" />
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
-    <View
-        android:id="@+id/rectangle"
-        android:layout_width="170dp"
-        android:layout_height="53dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:background="@color/kiosk_white"
-        android:elevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
-
-    <!-- drawable/rectangle_4.xml -->
 </androidx.constraintlayout.widget.ConstraintLayout>

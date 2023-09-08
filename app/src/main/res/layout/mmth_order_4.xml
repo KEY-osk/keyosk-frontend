@@ -100,12 +100,10 @@
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            app:columnCount="4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rowCount="2">
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:id="@+id/button_1"
@@ -118,9 +116,10 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="신메뉴"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_2"
@@ -132,9 +131,10 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="커피"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_3"
@@ -147,9 +147,10 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="디카페인"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_4"
@@ -163,9 +164,10 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/btn_select"
+                android:gravity="center"
                 android:text="콜드브루"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_black_01" />
+                android:textColor="@color/kiosk_black_01"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_5"
@@ -179,9 +181,10 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="논커피"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_6"
@@ -195,9 +198,10 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="티&amp;에이드"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_7"
@@ -211,9 +215,10 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="프라페&amp;블렌디드"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
             <Button
                 android:id="@+id/button_8"
@@ -228,9 +233,10 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="디저트"
-                android:textSize="8sp"
-                android:textColor="@color/kiosk_white"/>
+                android:textColor="@color/kiosk_white"
+                android:textSize="8sp" />
 
         </GridLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -265,14 +271,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:text="돌체콜드브루 라떼"
-                android:textSize="8dp" />
+                android:textSize="8sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="3,000원"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -297,14 +303,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:text="돌체콜드브루 라떼"
-                android:textSize="8dp" />
+                android:textSize="8sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="3,000원"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 

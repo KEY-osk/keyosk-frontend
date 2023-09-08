@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColdBrew_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/kiosk_grey_02">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/mmth_Coldbrew"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/btn_invisible_black"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/mmth_Coldbrew_img"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_launcher_foreground"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/mmth_Coldbrew_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="left"
+                        android:text="콜드브루"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/mmth_Coldbrew_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2,300"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mmth_Coldbrew_latte"
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn_invisible_black"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/mmth_Coldbrew_latte_img"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_launcher_foreground"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/mmth_Coldbrew_latte_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="콜드브루 라떼"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/mmth_Coldbrew_latte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3,000"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mmth_Coldbrew_Dolce_latte"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn_invisible_black"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/mmth_Coldbrew_Dolce_latte_img"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_launcher_foreground"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/mmth_Coldbrew_Dolce_latte_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="돌채 콜드브루\n라떼"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="8sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/mmth_Coldbrew_Dolce_latte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3,500"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mmth_Coldbrew_Dalgona_latte"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn_invisible_black"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/mmth_Coldbrew_Dalgona_latte_img"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_launcher_foreground"
+                        android:padding="16dp" />
+
+                    <TextView
+                        android:id="@+id/mmth_Coldbrew_Dalgona_latte_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="달고나 콜드브루\n라떼"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="8sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/mmth_Coldbrew_Dalgona_latte_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4,500"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="원"
+                            android:textColor="@color/kiosk_black_01"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

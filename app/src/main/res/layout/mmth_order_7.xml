@@ -100,12 +100,10 @@
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            app:columnCount="4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rowCount="2">
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:id="@+id/button_1"
@@ -118,6 +116,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="신메뉴"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -132,6 +131,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="커피"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -147,6 +147,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="디카페인"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -163,6 +164,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="콜드브루"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -179,6 +181,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="논커피"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -195,6 +198,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="티&amp;에이드"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />
@@ -211,6 +215,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/btn_select"
+                android:gravity="center"
                 android:text="프라페&amp;블렌디드"
                 android:textColor="@color/kiosk_black_01"
                 android:textSize="8sp" />
@@ -228,6 +233,7 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/btn_invisible"
+                android:gravity="center"
                 android:text="디저트"
                 android:textColor="@color/kiosk_white"
                 android:textSize="8sp" />

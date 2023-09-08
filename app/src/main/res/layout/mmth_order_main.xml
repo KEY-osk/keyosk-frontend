@@ -70,7 +70,7 @@
             android:gravity="center"
             android:text="주문 방법 선택"
             android:textColor="#CC0000"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -100,7 +100,8 @@
             android:background="@drawable/btn_style"
             android:text="매장"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:gravity="center"/>
 
 
     </LinearLayout>
@@ -121,7 +122,8 @@
             android:background="@drawable/btn_style"
             android:text="포장"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:gravity="center"/>
 
 
     </LinearLayout>

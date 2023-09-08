@@ -11,19 +11,17 @@
     </data>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="225dp"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         app:cardBackgroundColor="@color/kiosk_white"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="2dp"
-        android:layout_marginTop="15dp">
+        app:cardElevation="2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:padding="4dp">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -31,6 +29,7 @@
                 imageUrl="@{product.thumbnailImageUrl}"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -58,11 +57,11 @@
 
             <TextView
                 android:id="@+id/tv_item_cart_product_option"
-                android:layout_width="94dp"
-                android:layout_height="10dp"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
                 android:text="@{product.detail}"
                 android:textSize="6sp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_item_cart_product_price"
+                app:layout_constraintBottom_toTopOf="@+id/item_cart_product_price_1"
                 app:layout_constraintStart_toStartOf="@+id/tv_item_cart_product_title"
                 app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
                 app:layout_constraintVertical_bias="0.0"
@@ -73,7 +72,7 @@
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="3dp"
-                android:background="@drawable/ic_minus"
+                android:background="@drawable/ic_minus2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tv_item_cart_product_option"
                 app:layout_constraintTop_toTopOf="parent"
@@ -96,15 +95,15 @@
                 android:id="@+id/iv_item_cart_product_plus"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/ic_plus"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/ic_plus2"
                 app:layout_constraintStart_toStartOf="@id/tv_item_cart_product_count"
                 app:layout_constraintTop_toTopOf="@+id/iv_item_cart_product_minus" />
 
             <TextView
-                android:id="@+id/tv_item_cart_product_price"
+                android:id="@+id/item_cart_product_price_1"
                 priceAmount="@{product.price}"
-                android:layout_width="39dp"
+                android:layout_width="wrap_content"
                 android:layout_height="13dp"
                 android:layout_marginEnd="164dp"
                 android:textSize="8sp"
@@ -113,7 +112,23 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/tv_item_cart_product_option"
                 app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
-                tools:text="2,300원" />
+                app:layout_constraintVertical_bias="0.588"
+                tools:text="2,300" />
+
+            <TextView
+                android:id="@+id/item_cart_product_price_2"
+                priceAmount="@{product.price}"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_marginEnd="148dp"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/item_cart_product_price_1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
+                app:layout_constraintVertical_bias="0.588"
+                tools:text="원" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

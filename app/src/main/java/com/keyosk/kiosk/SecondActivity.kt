@@ -10,11 +10,5 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cafe)
 
-        val btnmmth : Button = findViewById(R.id.btn_next)
-        btnmmth.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }

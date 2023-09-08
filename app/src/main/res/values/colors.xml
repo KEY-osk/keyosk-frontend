@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="kiosk_splash">#899AD9</color>
+    <color name="kiosk_splash">#006FFD</color>
     <color name="kiosk_pink_01">#66e062ff</color>
     <color name="kiosk_pink_02">#11e062ff</color>
     <color name="kiosk_gradient_purple">#6b19ff</color>
@@ -15,4 +15,8 @@
     <color name="kiosk_brown">#967a6d</color>
     <color name="kiosk_click_purple">#899AD9</color>
     <color name="kiosk_order_top">#323335</color>
+    <color name="primaryColor">#00000000</color>
+    <color name="primaryTextColor">#00000000</color>
+    <color name="secondaryColor">#00000000</color>
+    <color name="select">#</color>
 </resources>
