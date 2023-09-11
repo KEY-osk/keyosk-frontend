@@ -19,9 +19,9 @@ class payDialog(private val getTotalPrice: String) : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.dialog_card, container, false)
-        val lyj_cancelBtn = view.findViewById<Button>(R.id.mmth_cancelBtn)
-        val lyj_approveBtn = view.findViewById<Button>(R.id.mmth_approveBtn)
-        val lyj_totalPriceDialog = view.findViewById<TextView>(R.id.mmth_totalPriceDialog)
+        val mmth_cancelBtn = view.findViewById<Button>(R.id.mmth_cancelBtn)
+        val mmth_approveBtn = view.findViewById<Button>(R.id.mmth_approveBtn)
+        val mmth_totalPriceDialog = view.findViewById<TextView>(R.id.mmth_totalPriceDialog)
 
         val params: WindowManager.LayoutParams =
             dialog?.window?.attributes as WindowManager.LayoutParams
@@ -31,15 +31,15 @@ class payDialog(private val getTotalPrice: String) : DialogFragment() {
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog?.setCancelable(false)
 
-        lyj_totalPriceDialog.text = getTotalPrice
+        mmth_totalPriceDialog.text = getTotalPrice
 
-        lyj_cancelBtn.setOnClickListener {
+        mmth_cancelBtn.setOnClickListener {
             dismiss()
         }
 
-        lyj_approveBtn.setOnClickListener {
+        mmth_approveBtn.setOnClickListener {
             // 결제 버튼 눌렀을때 "취소" 버튼 눌림 방지
-            lyj_cancelBtn.isEnabled = false
+            mmth_cancelBtn.isEnabled = false
             val mainActivity = activity as MainActivity
             mainActivity.let {
                 Toast.makeText(context, "결제중입니다. 잠시만 기다려주세요.", Toast.LENGTH_SHORT).show()

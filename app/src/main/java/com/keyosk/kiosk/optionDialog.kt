@@ -91,7 +91,7 @@ class optionDialog(
             mmth_shotOptionMenu.visibility = View.GONE
         }
 
-        // hot/ice 버튼을 "농도" 다음으로 2번째로 선택한 경우에도 lyj_optionCart 버튼 활성화 되도록
+        // hot/ice 버튼을 "농도" 다음으로 2번째로 선택한 경우에도 mmth_optionCart 버튼 활성화 되도록
         mmth_opHot.setOnClickListener {
             updateOptCartBtnState()
         }
@@ -109,12 +109,12 @@ class optionDialog(
             mmth_tumbleron.isChecked = false
             mmth_tumbleroff.isChecked = false
 
-            val lyj_optShotName = view.findViewById<TextView>(R.id.lyj_basic)
-            val lyj_optShotPrice = view.findViewById<TextView>(R.id.lyj_basicWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
 
             // 해당 text 정보 뽑아서 전달하기
-            mmth_plusOptShot = lyj_optShotName.text.toString()
-            mmth_plusOptShotPrice = lyj_optShotPrice.text.toString().toInt()
+            mmth_plusOptShot = mmth_optShotName.text.toString()
+            mmth_plusOptShotPrice = mmth_optShotPrice.text.toString().toInt()
             updateOptCartBtnState()
         }
         mmth_opIce.setOnClickListener {
@@ -126,8 +126,8 @@ class optionDialog(
             mmth_tumbleron.isChecked = false
             mmth_tumbleroff.isChecked = false
 
-            val mmth_optShotName = view.findViewById<TextView>(R.id.lyj_light)
-            val mmth_optShotPrice = view.findViewById<TextView>(R.id.lyj_lightWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_light)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_lightWon)
 
             // 해당 text 정보 뽑아서 전달하기
             mmth_plusOptShot = mmth_optShotName.text.toString()
@@ -143,8 +143,8 @@ class optionDialog(
             mmth_tumbleron.isChecked = false
             mmth_tumbleroff.isChecked = false
 
-            val mmth_optShotName = view.findViewById<TextView>(R.id.lyj_addShot)
-            val mmth_optShotPrice = view.findViewById<TextView>(R.id.lyj_addShotWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_addShot)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_addShotWon)
 
             // 해당 text 정보 뽑아서 전달하기
             mmth_plusOptShot = mmth_optShotName.text.toString()
@@ -160,12 +160,12 @@ class optionDialog(
             mmth_tumbleron.isChecked = false
             mmth_tumbleroff.isChecked = false
 
-            val lyj_optShotName = view.findViewById<TextView>(R.id.lyj_addTwoShot)
-            val lyj_optShotPrice = view.findViewById<TextView>(R.id.lyj_addTwoShotWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_addTwoShot)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_addTwoShotWon)
 
             // 해당 text 정보 뽑아서 전달하기
-            lyj_plusOptShot = lyj_optShotName.text.toString()
-            lyj_plusOptShotPrice = lyj_optShotPrice.text.toString().toInt()
+            mmth_plusOptShot = mmth_optShotName.text.toString()
+            mmth_plusOptShotPrice = mmth_optShotPrice.text.toString().toInt()
             updateOptCartBtnState()
         }
 
@@ -182,8 +182,8 @@ class optionDialog(
             val selectedHotIceOption: String
 
             // 리사이클러뷰로 옵션 선택한 문자열 넘기기
-            selectedHotIceOption = if (lyj_optHot.isChecked) "뜨거운 (HOT)"
-            else if (lyj_optIce.isChecked) "차가운 (ICE)" else ""
+            selectedHotIceOption = if (mmth_opHot.isChecked) "뜨거운 (HOT)"
+            else if (mmth_opIce.isChecked) "차가운 (ICE)" else ""
 
             // ItemData에 값 전달
             val mmth_itemData = ItemData(
@@ -213,17 +213,19 @@ class optionDialog(
             return
         }
         // 라디오 버튼 선택 여부로 버튼 활성화
-        val isAnyHotIceSelected = listOf(lyj_optHot, lyj_optIce).any { it.isChecked }
-        val isAnyRadBtnSelected =
-            listOf(lyj_basic, lyj_light, lyj_addShot, lyj_addTwoShot).any { it.isChecked }
+        val isAnyHotIceSelected = listOf(mmth_opHot, mmth_opHot).any { it.isChecked }
+        val isAnySizeBtnSelected =
+            listOf(mmth_small, mmth_middle, mmth_large).any { it.isChecked }
+        val isAnyTumblerSelected = listOf(mmth_tumbleron, mmth_tumbleroff).any { it.isChecked }
 
         // 모두 만족하는지 확인
-        val lyj_isBothSelected = (isAnyRadBtnSelected && isAnyHotIceSelected)
+        val mmth_isBothSelected = (isAnySizeBtnSelected && isAnyHotIceSelected)
+        val mmth_isAllSelected = (mmth_isBothSelected && isAnyTumblerSelected)
 
-        mmth_optionCart.isEnabled = lyj_isBothSelected
+        mmth_optionCart.isEnabled = mmth_isAllSelected
 
-        if (lyj_isBothSelected) {
-            // 라디오 버튼 둘다 선택된 경우 주문담기 버튼 활성화
+        if (mmth_isAllSelected) {
+            // 라디오 버튼 세 가지 다 선택된 경우 주문담기 버튼 활성화
             mmth_optionCart.setBackgroundColor(Color.parseColor("#323335"))
             mmth_optionCart.setTextColor(Color.parseColor("#FFFFFF"))
 

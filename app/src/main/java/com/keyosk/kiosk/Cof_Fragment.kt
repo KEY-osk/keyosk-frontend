@@ -19,7 +19,7 @@ class Cof_Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_Cof, container, false)
+        val view = inflater.inflate(R.layout.fragment_cof, container, false)
         val linearLayouts = listOf<LinearLayout>(
             view.findViewById(R.id.mmth_ameri),
             view.findViewById(R.id.mmth_latte),

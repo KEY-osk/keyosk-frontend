@@ -11,26 +11,20 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kiosk_grey_02"
+        android:background="@color/kiosk_order_top"
         android:minHeight="?attr/actionBarSize"
         app:contentInsetStart="0dp">
 
-        <ImageButton
-            android:id="@+id/lyj_goHome"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="10dp"
-            android:background="#00000000"
-            android:scaleType="fitCenter"
-            android:src="@drawable/home___" />
-
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text=" KIOSK"
+            android:background="@color/kiosk_order_top"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="매머드익스프레스"
             android:textColor="@color/kiosk_white"
-            android:textSize="25dp"
+            android:textSize="12sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -64,7 +58,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="28dp"
                 android:layout_height="match_parent"
                 android:layout_weight="6"
                 android:background="#D9D9D9"
@@ -72,7 +66,7 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
-                    android:layout_width="match_parent"
+                    android:layout_width="243dp"
                     android:layout_height="match_parent"
                     android:background="#D9D9D9"
                     android:orientation="vertical"
@@ -81,7 +75,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints"
-                    tools:listitem="@layout/item_cart"/>
+                    tools:listitem="@layout/item_cart" />
             </LinearLayout>
 
             <LinearLayout
