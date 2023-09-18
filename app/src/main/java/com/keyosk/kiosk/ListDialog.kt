@@ -51,22 +51,22 @@ class listDialog(
         params.height = WindowManager.LayoutParams.MATCH_PARENT
         dialog?.window?.attributes = params
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog?.setCancelable(false)    // 다이얼로그 외부 터치시 닫히지 않도록 설정
+        dialog?.setCancelable(false)
 
-        // 가격과 갯수 값 넣기
         mmth_listTotalPrice.text = totalPrice
         mmth_listTotalCount.text = totalCount
 
         mmth_listCancel.setOnClickListener {
-            // 리스트가 비어있지 않다면 MainActivity에 존재하는 버튼 lyj_payBtn, lyj_payImgBtn 다시 클릭 가능
             if (itemList.isNotEmpty()) {
-                (activity as? MainActivity)?.mmth_payBtn?.isEnabled = true
-                (activity as? MainActivity)?.mmth_payImgBtn?.isEnabled = true
+                (activity as? MmthMainActivity)?.mmth_pay1?.isEnabled = true
+                (activity as? MmthMainActivity)?.mmth_pay2?.isEnabled = true
+                (activity as? MmthMainActivity)?.mmth_pay3?.isEnabled = true
+                (activity as? MmthMainActivity)?.mmth_pay4?.isEnabled = true
             }
             dismiss()
         }
         mmth_listNext.setOnClickListener {
-            val dialog = takeDialog(totalPrice)
+            val dialog = thxDialog(totalPrice)
             dialog.show(parentFragmentManager, "CustomDialog")
             dismiss()
         }

@@ -23,8 +23,8 @@ class NonCoffee_Fragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_noncoffee, container, false)
         val linearLayouts = listOf<LinearLayout>(
-            view.findViewById(R.id.mmth_Decof_ameri),
-            view.findViewById(R.id.mmth_Decof_latte),
+            view.findViewById(R.id.mmth_NonCoffee1),
+            view.findViewById(R.id.mmth_NonCoffee2),
         )
 
         for (linearLayout in linearLayouts) {

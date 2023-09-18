@@ -9,6 +9,7 @@ import android.os.Looper
 import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
+import com.androidexlyj.lyj_kiosk.MmthHomeActivity
 
 class thxDialog() : DialogFragment() {
     private var countTime = 3
@@ -29,7 +30,7 @@ class thxDialog() : DialogFragment() {
         dialog?.setCancelable(false)
 
         val countdownHandler = Handler(Looper.getMainLooper())
-        // 5초에서 1초씩 감소시키기
+        // 3초에서 1초씩 감소시키기
         val countdownRunnable = object : Runnable {
             override fun run() {
                 if (countTime > 0) {
@@ -39,7 +40,7 @@ class thxDialog() : DialogFragment() {
                 } else {
                     // 0초
                     countdownHandler.removeCallbacks(this)  // countdownRunnable 제거
-                    val intent = Intent(context, HomeActivity::class.java)
+                    val intent = Intent(context, MmthHomeActivity::class.java)
                     startActivity(intent)
                     dismiss()
                 }

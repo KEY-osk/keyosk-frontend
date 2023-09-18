@@ -21,8 +21,8 @@ class NewMenu_Fragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_newmenu, container, false)
         val linearLayouts = listOf<LinearLayout>(
-            view.findViewById(R.id.mmth_ameri),
-            view.findViewById(R.id.mmth_latte),
+            view.findViewById(R.id.mmth_ice_VanillaCrumbleIceCreamLatte),
+            view.findViewById(R.id.mmth_ice_JejuSmoothie),
         )
 
         for (linearLayout in linearLayouts) {

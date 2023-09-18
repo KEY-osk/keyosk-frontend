@@ -22,7 +22,7 @@
                 android:layout_marginBottom="15dp">
 
                 <LinearLayout
-                    android:id="@+id/mmth_Blended1"
+                    android:id="@+id/mmth_ice_Blended1"
                     android:layout_width="70dp"
                     android:layout_height="110dp"
                     android:background="@drawable/btn_invisible_black"
@@ -32,14 +32,14 @@
                     android:padding="5dp">
 
                     <ImageView
-                        android:id="@+id/mmth_Blended1_img"
+                        android:id="@+id/mmth_ice_Blended1_img"
                         android:layout_width="35dp"
                         android:layout_height="50dp"
                         android:background="@drawable/ic_launcher_foreground"
                         android:padding="16dp" />
 
                     <TextView
-                        android:id="@+id/mmth_Blended1_text"
+                        android:id="@+id/mmth_ice_Blended1_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -55,7 +55,7 @@
                         android:gravity="left">
 
                         <TextView
-                            android:id="@+id/mmth_Blended1_price"
+                            android:id="@+id/mmth_ice_Blended1_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2,300"
@@ -72,7 +72,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/mmth_Blended2"
+                    android:id="@+id/mmth_ice_Blended2"
                     android:layout_width="70dp"
                     android:layout_height="110dp"
                     android:layout_marginLeft="15dp"
@@ -84,14 +84,14 @@
                     android:padding="5dp">
 
                     <ImageView
-                        android:id="@+id/mmth_Blended2_img"
+                        android:id="@+id/mmth_ice_Blended2_img"
                         android:layout_width="35dp"
                         android:layout_height="50dp"
                         android:background="@drawable/ic_launcher_foreground"
                         android:padding="16dp" />
 
                     <TextView
-                        android:id="@+id/mmth_Blended2_text"
+                        android:id="@+id/mmth_ice_Blended2_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -106,7 +106,7 @@
                         android:gravity="left">
 
                         <TextView
-                            android:id="@+id/mmth_Blended2_price"
+                            android:id="@+id/mmth_ice_Blended2_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3,000"

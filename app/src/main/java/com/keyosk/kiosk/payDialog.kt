@@ -40,8 +40,8 @@ class payDialog(private val getTotalPrice: String) : DialogFragment() {
         mmth_approveBtn.setOnClickListener {
             // 결제 버튼 눌렀을때 "취소" 버튼 눌림 방지
             mmth_cancelBtn.isEnabled = false
-            val mainActivity = activity as MainActivity
-            mainActivity.let {
+            val mmthmainActivity = activity as MmthMainActivity
+            mmthmainActivity.let {
                 Toast.makeText(context, "결제중입니다. 잠시만 기다려주세요.", Toast.LENGTH_SHORT).show()
 
                 // 5초 후에 결제 완료 메시지 표시 후 화면 전환

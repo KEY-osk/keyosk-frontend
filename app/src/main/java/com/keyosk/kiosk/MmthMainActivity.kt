@@ -20,7 +20,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class MmthMainActivity : AppCompatActivity() {
     lateinit var mmth_gohome: ImageButton
     lateinit var tabLayout: TabLayout
-    lateinit var viewPager2: ViewPager2
+    lateinit var mmth_viewPager2: ViewPager2
     lateinit var mmth_delAllBtn: Button
     lateinit var mmth_totalPrice: TextView
     lateinit var mmth_pay1: Button
@@ -71,9 +71,9 @@ class MmthMainActivity : AppCompatActivity() {
 
         // 초기화
         tabLayout = findViewById(R.id.mmth_tabLayout)
-        viewPager2 = findViewById(R.id.mmth_viewPager2)
+        mmth_viewPager2 = findViewById(R.id.mmth_viewPager2)
         val viewPager2Adapter = ViewPager2Adapter(this)
-        viewPager2.adapter = viewPager2Adapter
+        mmth_viewPager2.adapter = viewPager2Adapter
         // 탭 메뉴 추가
         val tabs = listOf(
             "신메뉴",
@@ -86,7 +86,7 @@ class MmthMainActivity : AppCompatActivity() {
             "디저트"
         )
 
-        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
+        TabLayoutMediator(tabLayout, mmth_viewPager2) { tab, position ->
             // 리스트 목록을 가져와 탭에 보여주기
             tab.text = tabs[position]
         }.attach()

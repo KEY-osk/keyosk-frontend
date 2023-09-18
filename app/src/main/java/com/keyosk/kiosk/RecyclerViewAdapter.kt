@@ -14,8 +14,6 @@ class RecyclerViewAdapter(
 ) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
-
-
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nameTextView: TextView = itemView.findViewById(R.id.mmth_recyMenuName)
         val priceTextView: TextView = itemView.findViewById(R.id.mmth_recyMenuPrice)
@@ -39,9 +37,9 @@ class RecyclerViewAdapter(
                 val position = adapterPosition
                 if (position != RecyclerView.NO_POSITION) {
                     // MainActivity 접근
-                    (itemView.context as MainActivity).mmth_itemList.removeAt(position)
-                    (itemView.context as MainActivity).mmth_adapter.notifyItemRemoved(position)
-                    (itemView.context as MainActivity).updateTotalPrice()
+                    (itemView.context as MmthMainActivity).mmth_itemList.removeAt(position)
+                    (itemView.context as MmthMainActivity).mmth_adapter.notifyItemRemoved(position)
+                    (itemView.context as MmthMainActivity).updateTotalPrice()
                 }
             }
         }

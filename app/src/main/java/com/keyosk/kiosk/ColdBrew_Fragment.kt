@@ -23,8 +23,10 @@ class ColdBrew_Fragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_coldbrew, container, false)
         val linearLayouts = listOf<LinearLayout>(
-            view.findViewById(R.id.mmth_Decof_ameri),
-            view.findViewById(R.id.mmth_Decof_latte),
+            view.findViewById(R.id.mmth_ice_coldbrew),
+            view.findViewById(R.id.mmth_ice_coldbrew_latte),
+            view.findViewById(R.id.mmth_ice_coldbrew_Dolce_latte),
+            view.findViewById(R.id.mmth_ice_coldbrew_Dalgona_latte),
         )
 
         for (linearLayout in linearLayouts) {
