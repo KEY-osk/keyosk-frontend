@@ -1,5 +1,6 @@
 package com.keyosk.kiosk
 
+
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
@@ -10,8 +11,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.TextView
-import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 
 class optionDialog(
@@ -32,17 +31,16 @@ class optionDialog(
     private lateinit var mmth_tumbleron: RadioButton
     private lateinit var mmth_tumbleroff: RadioButton
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.mmth_option, container, false)
+        val view = inflater.inflate(R.layout.dialog_option, container, false)
         val mmth_optionMenuName = view.findViewById<TextView>(R.id.mmth_optionMenuName)
         val mmth_optionMenuPrice = view.findViewById<TextView>(R.id.mmth_optionMenuPrice)
-        val mmth_optHotOrIce = view.findViewById<ConstraintLayout>(R.id.mmth_optHotOrIce)
-        val mmth_optSize = view.findViewById<ConstraintLayout>(R.id.mmth_optSize)
-        val mmth_optTumbler = view.findViewById<ConstraintLayout>(R.id.mmth_optTumbler)
-        val mmth_shotOptionMenu = view.findViewById<ConstraintLayout>(R.id.mmth_shotOptionMenu)
+        val mmth_optHotOrIce = view.findViewById<LinearLayout>(R.id.mmth_optHotOrIce)
+        val mmth_optSize = view.findViewById<LinearLayout>(R.id.mmth_optSize)
+        val mmth_optTumbler = view.findViewById<LinearLayout>(R.id.mmth_optTumbler)
+        val mmth_shotOptionMenu = view.findViewById<LinearLayout>(R.id.mmth_shotOptionMenu)
         val mmth_optionDel = view.findViewById<Button>(R.id.mmth_optionDel)
         val mmth_optionMenuImg = view.findViewById<ImageView>(R.id.mmth_optionMenuImg)
 
@@ -103,11 +101,6 @@ class optionDialog(
         mmth_opHot.setOnClickListener {
             mmth_opHot.isChecked = true
             mmth_opIce.isChecked = false
-            mmth_small.isChecked = false
-            mmth_middle.isChecked = false
-            mmth_large.isChecked = false
-            mmth_tumbleron.isChecked = false
-            mmth_tumbleroff.isChecked = false
 
             val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
             val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
@@ -120,14 +113,9 @@ class optionDialog(
         mmth_opIce.setOnClickListener {
             mmth_opHot.isChecked = false
             mmth_opIce.isChecked = true
-            mmth_small.isChecked = false
-            mmth_middle.isChecked = false
-            mmth_large.isChecked = false
-            mmth_tumbleron.isChecked = false
-            mmth_tumbleroff.isChecked = false
 
-            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_light)
-            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_lightWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
 
             // 해당 text 정보 뽑아서 전달하기
             mmth_plusOptShot = mmth_optShotName.text.toString()
@@ -135,16 +123,12 @@ class optionDialog(
             updateOptCartBtnState()
         }
         mmth_small.setOnClickListener {
-            mmth_opHot.isChecked = false
-            mmth_opIce.isChecked = false
             mmth_small.isChecked = true
             mmth_middle.isChecked = false
             mmth_large.isChecked = false
-            mmth_tumbleron.isChecked = false
-            mmth_tumbleroff.isChecked = false
 
-            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_addShot)
-            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_addShotWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
 
             // 해당 text 정보 뽑아서 전달하기
             mmth_plusOptShot = mmth_optShotName.text.toString()
@@ -152,16 +136,51 @@ class optionDialog(
             updateOptCartBtnState()
         }
         mmth_middle.setOnClickListener {
-            mmth_opHot.isChecked = false
-            mmth_opIce.isChecked = false
             mmth_small.isChecked = false
             mmth_middle.isChecked = true
             mmth_large.isChecked = false
-            mmth_tumbleron.isChecked = false
+
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
+
+            // 해당 text 정보 뽑아서 전달하기
+            mmth_plusOptShot = mmth_optShotName.text.toString()
+            mmth_plusOptShotPrice = mmth_optShotPrice.text.toString().toInt()
+            updateOptCartBtnState()
+        }
+        mmth_large.setOnClickListener {
+            mmth_small.isChecked = false
+            mmth_middle.isChecked = false
+            mmth_large.isChecked = true
+
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
+
+            // 해당 text 정보 뽑아서 전달하기
+            mmth_plusOptShot = mmth_optShotName.text.toString()
+            mmth_plusOptShotPrice = mmth_optShotPrice.text.toString().toInt()
+            updateOptCartBtnState()
+        }
+
+        mmth_tumbleron.setOnClickListener {
+            mmth_tumbleron.isChecked = true
             mmth_tumbleroff.isChecked = false
 
-            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_addTwoShot)
-            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_addTwoShotWon)
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
+
+            // 해당 text 정보 뽑아서 전달하기
+            mmth_plusOptShot = mmth_optShotName.text.toString()
+            mmth_plusOptShotPrice = mmth_optShotPrice.text.toString().toInt()
+            updateOptCartBtnState()
+        }
+
+        mmth_tumbleroff.setOnClickListener {
+            mmth_tumbleron.isChecked = false
+            mmth_tumbleroff.isChecked = true
+
+            val mmth_optShotName = view.findViewById<TextView>(R.id.mmth_basic)
+            val mmth_optShotPrice = view.findViewById<TextView>(R.id.mmth_basicWon)
 
             // 해당 text 정보 뽑아서 전달하기
             mmth_plusOptShot = mmth_optShotName.text.toString()
@@ -182,8 +201,8 @@ class optionDialog(
             val selectedHotIceOption: String
 
             // 리사이클러뷰로 옵션 선택한 문자열 넘기기
-            selectedHotIceOption = if (mmth_opHot.isChecked) "뜨거운 (HOT)"
-            else if (mmth_opIce.isChecked) "차가운 (ICE)" else ""
+            selectedHotIceOption = if (mmth_opHot.isChecked) "HOT (핫)"
+            else if (mmth_opIce.isChecked) "ICE (아이스)" else ""
 
             // ItemData에 값 전달
             val mmth_itemData = ItemData(
@@ -195,7 +214,7 @@ class optionDialog(
                 mmth_plusOptShot,
                 mmth_plusOptShotPrice
             )
-            val mainActivity = activity as MainActivity
+            val mainActivity = activity as MmthMainActivity
             // 아이템 추가
             mainActivity.addNewItem(mmth_itemData)
             dismiss()
@@ -214,17 +233,15 @@ class optionDialog(
         }
         // 라디오 버튼 선택 여부로 버튼 활성화
         val isAnyHotIceSelected = listOf(mmth_opHot, mmth_opHot).any { it.isChecked }
-        val isAnySizeBtnSelected =
-            listOf(mmth_small, mmth_middle, mmth_large).any { it.isChecked }
+        val isAnySizeBtnSelected = listOf(mmth_small, mmth_middle, mmth_large).any { it.isChecked }
         val isAnyTumblerSelected = listOf(mmth_tumbleron, mmth_tumbleroff).any { it.isChecked }
 
         // 모두 만족하는지 확인
         val mmth_isBothSelected = (isAnySizeBtnSelected && isAnyHotIceSelected)
-        val mmth_isAllSelected = (mmth_isBothSelected && isAnyTumblerSelected)
 
-        mmth_optionCart.isEnabled = mmth_isAllSelected
+        mmth_optionCart.isEnabled = isAnySizeBtnSelected
 
-        if (mmth_isAllSelected) {
+        if (mmth_isBothSelected) {
             // 라디오 버튼 세 가지 다 선택된 경우 주문담기 버튼 활성화
             mmth_optionCart.setBackgroundColor(Color.parseColor("#323335"))
             mmth_optionCart.setTextColor(Color.parseColor("#FFFFFF"))

@@ -40,7 +40,7 @@ class TotalListRecyclerViewAdapter (private val itemList: ArrayList<ItemData>) :
         holder.mmth_recyMenuNameList.text = item.name
         holder.mmth_recyMenuPriceList.text = (item.price.toInt() * item.count).toString()
         holder.mmth_cntList.text = item.count.toString()
-        holder.mmth_optionPlusShotList.text = item.optShotName
+        holder.mmth_optionPlusShotList.text = item.optSize
         holder.mmth_optionPlusShotPriceList.text = (item.optShotPrice * item.count).toString()
         holder.mmth_optionHotIceMenuText.text = item.selectedHotIceOption
 

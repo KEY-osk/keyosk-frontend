@@ -66,7 +66,7 @@ class listDialog(
             dismiss()
         }
         mmth_listNext.setOnClickListener {
-            val dialog = thxDialog(totalPrice)
+            val dialog = payDialog(totalPrice)
             dialog.show(parentFragmentManager, "CustomDialog")
             dismiss()
         }

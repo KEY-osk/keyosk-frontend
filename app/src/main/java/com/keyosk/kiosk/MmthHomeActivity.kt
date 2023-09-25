@@ -1,11 +1,10 @@
-package com.androidexlyj.lyj_kiosk
+package com.keyosk.kiosk
+
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.keyosk.kiosk.MmthMainActivity
-import com.keyosk.kiosk.R
 
 
 class MmthHomeActivity : AppCompatActivity() {
@@ -22,10 +21,12 @@ class MmthHomeActivity : AppCompatActivity() {
         mmthtogo = findViewById<Button>(R.id.mmth_togo)
 
         // 메뉴 화면으로 이동
+        val mmthforhere: Button = findViewById(R.id.mmth_forhere)
         mmthforhere.setOnClickListener {
             val intent = Intent(this, MmthMainActivity::class.java)
             startActivity(intent)
         }
+        val mmthtogo: Button = findViewById(R.id.mmth_togo)
         mmthtogo.setOnClickListener {
             val intent = Intent(this, MmthMainActivity::class.java)
             startActivity(intent)

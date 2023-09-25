@@ -13,12 +13,12 @@
         android:paddingTop="5dp">
 
         <LinearLayout
-            android:id="@+id/lyj_onlyListMenu"
+            android:id="@+id/mmth_onlyListMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/lyj_recyMenuDel"
+                android:id="@+id/mmth_recyMenuDel"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_gravity="center"
@@ -29,7 +29,7 @@
                 android:src="@drawable/ic_delete" />
 
             <TextView
-                android:id="@+id/lyj_recyMenuName"
+                android:id="@+id/mmth_recyMenuName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -49,7 +49,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/lyj_minusBtn"
+                        android:id="@+id/mmth_minusBtn"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginRight="5dp"
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/lyj_cnt"
+                            android:id="@+id/mmth_cnt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1"
@@ -79,7 +79,7 @@
 
 
                     <ImageButton
-                        android:id="@+id/lyj_plusBtn"
+                        android:id="@+id/mmth_plusBtn"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="5dp"
@@ -96,7 +96,7 @@
                     android:gravity="right">
 
                     <TextView
-                        android:id="@+id/lyj_recyMenuPrice"
+                        android:id="@+id/mmth_recyMenuPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="end"
@@ -118,7 +118,7 @@
         </LinearLayout>
         <!--                        옵션 추가시 추가될 목록-->
         <LinearLayout
-            android:id="@+id/lyj_optionPlusMenu"
+            android:id="@+id/mmth_optionPlusMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -135,10 +135,11 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="2dp"
                     android:scaleType="fitCenter"
+                    android:background="@drawable/btn_style"
                     android:src="@drawable/icon_plus" />
 
                 <TextView
-                    android:id="@+id/lyj_optionPlusShot"
+                    android:id="@+id/mmth_optionPlusShot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
@@ -147,7 +148,7 @@
                     android:textSize="11dp" />
 
                 <LinearLayout
-                    android:id="@+id/lyj_optionPlusShotMenu"
+                    android:id="@+id/mmth_optionPlusShotMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
@@ -161,7 +162,7 @@
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/lyj_optionPlusShotPrice"
+                        android:id="@+id/mmth_optionPlusShotPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2352"
@@ -181,7 +182,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/lyj_optionHotIceMenu"
+            android:id="@+id/mmth_optionHotIceMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -200,7 +201,7 @@
                     android:src="@drawable/icon_plus" />
 
                 <TextView
-                    android:id="@+id/lyj_optionHotIce"
+                    android:id="@+id/mmth_optionHotIce"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
@@ -222,7 +223,7 @@
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/lyj_optionHotIcePrice"
+                        android:id="@+id/mmth_optionHotIcePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
