@@ -9,7 +9,6 @@ import android.os.Looper
 import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
-import com.androidexlyj.lyj_kiosk.MmthHomeActivity
 
 class thxDialog() : DialogFragment() {
     private var countTime = 3
@@ -18,7 +17,7 @@ class thxDialog() : DialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.dialog_thx, container, false)
-        val lyj_countTime = view.findViewById<TextView>(R.id.mmth_countTime)
+        val mmth_countTime = view.findViewById<TextView>(R.id.mmth_countTime)
 
         val params: WindowManager.LayoutParams =
             dialog?.window?.attributes as WindowManager.LayoutParams
@@ -34,13 +33,13 @@ class thxDialog() : DialogFragment() {
         val countdownRunnable = object : Runnable {
             override fun run() {
                 if (countTime > 0) {
-                    lyj_countTime.text = countTime.toString()
+                    mmth_countTime.text = countTime.toString()
                     countTime--
                     countdownHandler.postDelayed(this, 1000)    // 1초 후에 다시 run() 실행
                 } else {
                     // 0초
                     countdownHandler.removeCallbacks(this)  // countdownRunnable 제거
-                    val intent = Intent(context, MmthHomeActivity::class.java)
+                    val intent = Intent(context, MmthEndActivity::class.java)
                     startActivity(intent)
                     dismiss()
                 }

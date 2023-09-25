@@ -6,41 +6,36 @@
     android:layout_height="match_parent"
     android:background="@color/kiosk_grey_01">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_cafe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kiosk_white"
-        app:contentInsetStart="0dp"
-        app:layout_scrollFlags="scroll|enterAlways"
-        tools:ignore="MissingConstraints">
+        tools:ignore="InvalidId,MissingConstraints">
 
-        <TextView
-            android:id="@+id/textView4"
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="30dp"
-            android:text="카페"
-            android:textColor="@color/kiosk_black_01"
-            android:textSize="35dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            android:background="@color/kiosk_white"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="패스트푸드"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar_etc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/kiosk_white"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="InvalidId,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        </androidx.appcompat.widget.Toolbar>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -51,55 +46,59 @@
             android:background="@color/kiosk_white">
 
             <Button
-                android:gravity="center"
-                android:id="@+id/btn_category_cafe_select"
+                android:id="@+id/cafe_category"
                 android:layout_width="58dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/btn_category_select"
+                android:background="@drawable/btn_invisible"
                 android:padding="5dp"
                 android:text="@string/cafe"
-                android:textColor="@color/kiosk_white"
+                android:textColor="@color/kiosk_black_01"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintEnd_toStartOf="@+id/fastfood_category"
                 app:layout_constraintHorizontal_bias="0.453"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:gravity="center"
-                android:id="@+id/button3"
+                android:id="@+id/fastfood_category"
                 android:layout_width="58dp"
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/btn_invisible"
+                android:background="@drawable/btn_category_select"
                 android:padding="5dp"
                 android:text="패스트푸드"
-                android:textColor="@color/kiosk_black_01"
+                android:textColor="@color/kiosk_white"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
 
             <Button
-                android:gravity="center"
-                android:id="@+id/button4"
+                android:id="@+id/etc_category"
                 android:layout_width="58dp"
                 android:layout_height="30dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/btn_invisible"
                 android:padding="5dp"
                 android:text="기타"
-                android:textColor="@color/kiosk_black_01"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/button3"
+                app:layout_constraintStart_toEndOf="@id/fastfood_category"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category_cafe_list" />
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

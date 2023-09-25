@@ -47,7 +47,7 @@ class RecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_list, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -65,7 +65,7 @@ class RecyclerViewAdapter(
         holder.priceTextView.text = (item.price.toInt() * item.count).toString()
         holder.mmth_cnt.text = item.count.toString()
 
-        holder.mmth_optionPlusShot.text = item.optShotName
+        holder.mmth_optionPlusShot.text = item.optSize
         holder.mmth_optionPlusShotPrice.text = (item.optShotPrice * item.count).toString()
         holder.mmth_optionHotIce.text = item.selectedHotIceOption
 

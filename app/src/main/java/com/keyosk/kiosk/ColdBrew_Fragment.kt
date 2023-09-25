@@ -17,7 +17,6 @@ class ColdBrew_Fragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
