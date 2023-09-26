@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     android:layout_width="match_parent"
+=======
+    android:layout_width="wrap_content"
+>>>>>>> origin/frontend
     android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:background="@drawable/btn_invisible_black"
@@ -12,7 +16,11 @@
     tools:context=".TotalListRecyclerViewAdapter">
 
     <LinearLayout
+<<<<<<< HEAD
         android:layout_width="match_parent"
+=======
+        android:layout_width="210dp"
+>>>>>>> origin/frontend
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -102,7 +110,11 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="2dp"
                     android:scaleType="fitCenter"
+<<<<<<< HEAD
                     android:src="@drawable/arrow" />
+=======
+                    android:src="@drawable/icon_plus" />
+>>>>>>> origin/frontend
 
                 <TextView
                     android:id="@+id/mmth_optionPlusShotList"
@@ -163,7 +175,11 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="2dp"
                     android:scaleType="fitCenter"
+<<<<<<< HEAD
                     android:src="@drawable/arrow" />
+=======
+                    android:src="@drawable/btn_invisible_black" />
+>>>>>>> origin/frontend
 
                 <TextView
                     android:id="@+id/mmth_optionHotIceMenuText"
