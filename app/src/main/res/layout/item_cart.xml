@@ -1,131 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/btn_invisible_black"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".TotalListRecyclerViewAdapter">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="210dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        app:cardBackgroundColor="@color/kiosk_white"
-        app:cardElevation="2dp">
+        android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/iv_item_cart_product"
-                imageUrl="@{product.thumbnailImageUrl}"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tv_item_cart_product_title"
-                android:layout_width="46dp"
-                android:layout_height="10dp"
-                android:layout_marginHorizontal="12dp"
-                android:text="@{product.label}"
-                android:textSize="8sp"
-                app:layout_constraintEnd_toStartOf="@id/btn_item_cart_product_delete"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/iv_item_cart_product"
-                app:layout_constraintTop_toTopOf="@id/iv_item_cart_product"
-                tools:text="콜드브루" />
-
-            <ImageButton
-                android:id="@+id/btn_item_cart_product_delete"
-                android:layout_width="wrap_content"
+                android:id="@+id/mmth_recyMenuNameList"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_delete"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:text="메뉴 이름"
+                android:textColor="@color/kiosk_black_01"
+                android:textSize="12dp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_item_cart_product_option"
-                android:layout_width="75dp"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@{product.detail}"
-                android:textSize="6sp"
-                app:layout_constraintBottom_toTopOf="@+id/item_cart_product_price_1"
-                app:layout_constraintStart_toStartOf="@+id/tv_item_cart_product_title"
-                app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
-                app:layout_constraintVertical_bias="0.0"
-                tools:text="ICE(아이스), SIZE M(2샷)" />
+                android:layout_gravity="center"
+                android:layout_weight="1">
 
-            <ImageButton
-                android:id="@+id/iv_item_cart_product_minus"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="3dp"
-                android:background="@drawable/ic_minus2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tv_item_cart_product_option"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.493" />
+                <TextView
+                    android:id="@+id/mmth_cntList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_item_cart_product_count"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 개"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@{mmth.count}"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@id/iv_item_cart_product_minus"
-                app:layout_constraintEnd_toStartOf="@id/iv_item_cart_product_plus"
-                app:layout_constraintStart_toEndOf="@+id/iv_item_cart_product_minus"
-                app:layout_constraintTop_toTopOf="@id/iv_item_cart_product_minus"
-                app:layout_constraintVertical_bias="0.0"
-                tools:text="1" />
+                android:layout_weight="2"
+                android:gravity="right">
 
-            <ImageButton
-                android:id="@+id/iv_item_cart_product_plus"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="15dp"
-                android:background="@drawable/ic_plus2"
-                app:layout_constraintStart_toStartOf="@id/tv_item_cart_product_count"
-                app:layout_constraintTop_toTopOf="@+id/iv_item_cart_product_minus" />
+                <TextView
+                    android:id="@+id/mmth_recyMenuPriceList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="223400"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/item_cart_product_price_1"
-                priceAmount="@{product.price}"
-                android:layout_width="wrap_content"
-                android:layout_height="13dp"
-                android:layout_marginEnd="164dp"
-                android:textSize="8sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/tv_item_cart_product_option"
-                app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
-                app:layout_constraintVertical_bias="0.588"
-                tools:text="2,300" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="원"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="14dp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/item_cart_product_price_2"
-                priceAmount="@{product.price}"
-                android:layout_width="wrap_content"
-                android:layout_height="13dp"
-                android:layout_marginEnd="148dp"
-                android:textSize="8sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/item_cart_product_price_1"
-                app:layout_constraintTop_toBottomOf="@+id/tv_item_cart_product_title"
-                app:layout_constraintVertical_bias="0.588"
-                tools:text="원" />
+        </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/mmth_totalRecyShotLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
 
-    </androidx.cardview.widget.CardView>
-</layout>
+            <LinearLayout
+                android:id="@+id/mmth_optionPlusMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
 
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow" />
 
+                <TextView
+                    android:id="@+id/mmth_optionPlusShotList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="샷추가"
+                    android:textColor="@color/kioksk_option"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ "
+                        android:textColor="@color/kioksk_option"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/mmth_optionPlusShotPriceList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2352"
+                        android:textColor="@color/kioksk_option"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="원"
+                        android:textColor="@color/kioksk_option"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mmth_totalRecyHotIceLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mmth_optionHotIceMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/btn_style"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/mmth_optionHotIceMenuText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="hot/ice"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ "
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="원"
+                        android:textColor="@color/kiosk_black_01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
