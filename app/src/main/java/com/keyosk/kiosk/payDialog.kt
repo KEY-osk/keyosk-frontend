@@ -44,7 +44,7 @@ class payDialog(private val getTotalPrice: String) : DialogFragment() {
             mmthmainActivity.let {
                 Toast.makeText(context, "결제중입니다. 잠시만 기다려주세요.", Toast.LENGTH_SHORT).show()
 
-                // 5초 후에 결제 완료 메시지 표시 후 화면 전환
+                // 3초 후에 결제 완료 메시지 표시 후 화면 전환
                 Handler(Looper.getMainLooper()).postDelayed({
                     Toast.makeText(context, "결제가 완료되었습니다.", Toast.LENGTH_SHORT).show()
                     it.clearItemListAll()

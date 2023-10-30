@@ -13,7 +13,6 @@ import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-// 전체 총 주문 리스트 보여주는 다이얼로그
 class listDialog(
     private val itemList: ArrayList<ItemData>,
     private val totalPrice: String,
@@ -35,16 +34,13 @@ class listDialog(
         mmth_listTotalPrice = view.findViewById(R.id.mmth_listTotalPrice)
         mmth_listTotalCount = view.findViewById(R.id.mmth_listTotalCount)
 
-        // 다른 형태의 리사이클러뷰
         mmth_recyclerViewItemResult = view.findViewById(R.id.mmth_recyclerViewItemResult)
         mmth_adapter = TotalListRecyclerViewAdapter(itemList)
 
-        // 리사이클러뷰 아이템 새로 배치
         val layoutManager = LinearLayoutManager(context)
         mmth_recyclerViewItemResult.layoutManager = layoutManager
         mmth_recyclerViewItemResult.adapter = mmth_adapter
 
-        // 다이얼로그 속성 설정
         val params: WindowManager.LayoutParams =
             dialog?.window?.attributes as WindowManager.LayoutParams
         params.width = WindowManager.LayoutParams.MATCH_PARENT

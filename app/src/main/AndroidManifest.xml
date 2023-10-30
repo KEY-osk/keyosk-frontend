@@ -7,15 +7,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/BaseAppTheme"
-        tools:targetApi="31"
-        android:name=".GlobalApplication">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
         <activity android:name=".MainActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />
@@ -23,10 +24,10 @@
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".MmthHomeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MmthMainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -52,9 +53,7 @@
                     android:host="oauth"
                     android:scheme="@string/kakao_app_key2"
                     tools:ignore="AppLinkUrlError" />
-
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

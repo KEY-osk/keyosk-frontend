@@ -28,11 +28,9 @@ class RecyclerViewAdapter(
         val mmth_optionHotIce: TextView = itemView.findViewById(R.id.mmth_optionHotIce)
 
         val mmth_optionHotIceMenu: LinearLayout = itemView.findViewById(R.id.mmth_optionHotIceMenu)
-        val mmth_onlyListMenu: LinearLayout = itemView.findViewById(R.id.mmth_onlyListMenu)
         val mmth_optionPlusMenu: LinearLayout = itemView.findViewById(R.id.mmth_optionPlusMenu)
 
         init {
-            // 삭제 버튼 클릭시 각 해당 리스트 삭제
             mmth_recyMenuDel.setOnClickListener {
                 val position = adapterPosition
                 if (position != RecyclerView.NO_POSITION) {

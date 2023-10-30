@@ -3,9 +3,9 @@
 
     <!-- Kakao KEY설정[AndroidManifest.xml에도 설정]-->
     <!-- Kakao-init에서 사용 -->
-    <string name="kakao_app_key">{NATIVE_APP_KEY}}</string>
+    <string name="kakao_app_key">22457d9cf9c10d9b883229d0bdd6c681</string>
     <!-- AndroidManifest.xml에서 사용 -->
-    <string name="kakao_app_key2">kakao{NATIVE_APP_KEY}</string>
+    <string name="kakao_app_key2">kakao22457d9cf9c10d9b883229d0bdd6c681</string>
 
     <string name="movePageButton">테스트</string>
     <string name="kiosk_">Kiosk 도우미</string>
