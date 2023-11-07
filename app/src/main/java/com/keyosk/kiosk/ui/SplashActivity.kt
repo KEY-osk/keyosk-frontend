@@ -1,10 +1,11 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.keyosk.kiosk.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

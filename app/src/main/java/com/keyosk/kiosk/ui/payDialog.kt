@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import com.keyosk.kiosk.R
 
 class payDialog(private val getTotalPrice: String) : DialogFragment() {
 

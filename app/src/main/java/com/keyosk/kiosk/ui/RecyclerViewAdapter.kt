@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ItemData
 
 class RecyclerViewAdapter(
     private val itemList: ArrayList<ItemData>,

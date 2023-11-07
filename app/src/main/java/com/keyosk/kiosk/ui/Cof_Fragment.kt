@@ -1,17 +1,20 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
-import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ApiClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
-class Tea_Ade_Fragment : Fragment() {
+class Cof_Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +23,10 @@ class Tea_Ade_Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_tea, container, false)
+        val view = inflater.inflate(R.layout.fragment_cof, container, false)
         val linearLayouts = listOf<LinearLayout>(
-            view.findViewById(R.id.mmth_Tea1),
-            view.findViewById(R.id.mmth_Tea2),
+            view.findViewById(R.id.mmth_ameri),
+            view.findViewById(R.id.mmth_latte),
         )
 
         for (linearLayout in linearLayouts) {
@@ -74,6 +77,27 @@ class Tea_Ade_Fragment : Fragment() {
                 resources.getResourceEntryName(linearLayoutId), text!!, price!!, imageDrawable!!
             )
             dialog.show(activity?.supportFragmentManager!!, "CustomDialog")
+        }
+
+        val touchService = ApiClient.touchService
+
+        fun sendTouchCoordinatesToServer(x: Float, y: Float) {
+            val touchApiService = ApiClient.touchService
+
+            val call: Call<Void> = touchApiService.sendTouchCoordinates(x, y)
+            call.enqueue(object : Callback<Void> {
+                override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                    if (response.isSuccessful) {
+                        // 터치 좌표 전송 성공
+                    } else {
+                        // 터치 좌표 전송 실패
+                    }
+                }
+
+                override fun onFailure(call: Call<Void>, t: Throwable) {
+                    // 네트워크 오류 또는 예외 발생 시 처리
+                }
+            })
         }
     }
 }

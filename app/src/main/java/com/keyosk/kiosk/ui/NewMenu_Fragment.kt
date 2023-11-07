@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -7,9 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.keyosk.kiosk.R
 
 
-class Cof_Fragment : Fragment() {
+class NewMenu_Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +19,10 @@ class Cof_Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_cof, container, false)
+        val view = inflater.inflate(R.layout.fragment_newmenu, container, false)
         val linearLayouts = listOf<LinearLayout>(
-            view.findViewById(R.id.mmth_ameri),
-            view.findViewById(R.id.mmth_latte),
+            view.findViewById(R.id.mmth_ice_VanillaCrumbleIceCreamLatte),
+            view.findViewById(R.id.mmth_ice_JejuSmoothie),
         )
 
         for (linearLayout in linearLayouts) {

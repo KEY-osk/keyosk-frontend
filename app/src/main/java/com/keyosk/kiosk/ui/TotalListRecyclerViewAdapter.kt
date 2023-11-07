@@ -1,12 +1,13 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ItemData
 
 // 전체 총 주문 목록 보여주는 코드
 class TotalListRecyclerViewAdapter (private val itemList: ArrayList<ItemData>) :

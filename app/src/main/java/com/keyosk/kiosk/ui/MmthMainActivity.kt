@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +15,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ItemData
 
 class MmthMainActivity : AppCompatActivity() {
     lateinit var mmth_gohome: ImageButton

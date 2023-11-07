@@ -9,7 +9,7 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:paddingBottom="10dp"
-    tools:context=".TotalListRecyclerViewAdapter">
+    tools:context=".ui.TotalListRecyclerViewAdapter">
 
     <LinearLayout
         android:layout_width="match_parent"

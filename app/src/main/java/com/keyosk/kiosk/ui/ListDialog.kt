@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -12,6 +12,8 @@ import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ItemData
 
 class listDialog(
     private val itemList: ArrayList<ItemData>,

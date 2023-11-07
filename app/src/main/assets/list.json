@@ -1,5 +1,16 @@
 {
-  "rank1_img": "",
-  "rank_title": "맥도날드",
-  "rank_category": "프랜차이즈"
+  "ranks": [
+    {
+      "rank_id": "1",
+      "rank1_img": "",
+      "rank_title": "맥도날드",
+      "rank_category": "프랜차이즈"
+    },
+    {
+    "rank_id": "2",
+    "rank1_img": "",
+    "rank_title": "투썸플레이스",
+    "rank_category": "카페"
+    }
+  ]
 }

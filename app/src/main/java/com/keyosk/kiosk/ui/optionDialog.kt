@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 
 import android.graphics.Color
@@ -12,6 +12,8 @@ import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
+import com.keyosk.kiosk.R
+import com.keyosk.kiosk.api.ItemData
 
 class optionDialog(
     private val id: String,

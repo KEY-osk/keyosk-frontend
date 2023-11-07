@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.api
 
 data class ItemData(
     val id: String, val name: String, val price: String, var count: Int,

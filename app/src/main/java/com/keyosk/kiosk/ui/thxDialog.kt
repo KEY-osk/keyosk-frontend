@@ -1,4 +1,4 @@
-package com.keyosk.kiosk
+package com.keyosk.kiosk.ui
 
 import android.content.Intent
 import android.graphics.Color
@@ -9,6 +9,7 @@ import android.os.Looper
 import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
+import com.keyosk.kiosk.R
 
 class thxDialog() : DialogFragment() {
     private var countTime = 3
