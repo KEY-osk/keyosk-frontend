@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
-    android:background="@drawable/btn_invisible_black"
+    android:background="@drawable/btn_survey"
     android:gravity="center_vertical"
     android:minWidth="400dp"
     android:minHeight="300dp"
@@ -48,7 +48,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/ic_minus" />
+            android:background="@drawable/pay" />
 
         <TextView
             android:layout_width="match_parent"

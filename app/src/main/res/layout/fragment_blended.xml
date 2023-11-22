@@ -33,21 +33,21 @@
 
                     <ImageView
                         android:id="@+id/mmth_ice_Blended1_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/javachips"
                         android:padding="16dp" />
 
                     <TextView
                         android:id="@+id/mmth_ice_Blended1_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:gravity="left"
-                        android:text="블렌드1"
+                        android:text="자바칩\n블렌디드"
                         android:textColor="@color/kiosk_black_01"
-                        android:textSize="11sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -85,20 +85,20 @@
 
                     <ImageView
                         android:id="@+id/mmth_ice_Blended2_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/pistachio"
                         android:padding="16dp" />
 
                     <TextView
                         android:id="@+id/mmth_ice_Blended2_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
-                        android:text="블렌드2"
+                        android:text="피스타치오\n블렌디드"
                         android:textColor="@color/kiosk_black_01"
-                        android:textSize="11sp" />
+                        android:textSize="9sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

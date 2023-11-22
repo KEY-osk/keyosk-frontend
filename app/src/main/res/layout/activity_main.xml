@@ -24,25 +24,111 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rank_RecyclerView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        tools:listitem="@layout/item_type_list" />-->
+    <HorizontalScrollView
+        android:layout_width="424dp"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/categry_RecyclerView"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_category_list"
-                android:padding="5dp"/>
-        </RelativeLayout>
-    </androidx.core.widget.NestedScrollView>
+                android:layout_marginLeft="15dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
 
+                <Button
+                    android:id="@+id/next_cafe"
+                    android:text="카페"
+                    android:gravity="left"
+                    android:layout_width="113dp"
+                    android:layout_height="127dp"
+                    android:padding="5dp"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:background="@color/kiosk_white" />
+
+
+
+                <!--        <RelativeLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent">-->
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/categry_RecyclerView"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                tools:listitem="@layout/item_category_list"-->
+                <!--                android:padding="5dp"/>-->
+                <!--        </RelativeLayout>-->
+                <!--    </androidx.core.widget.NestedScrollView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="-2dp">
+
+
+                <TextView
+                    android:id="@+id/rank1_title"
+                    android:layout_width="113dp"
+                    android:layout_height="127dp"
+                    android:padding="5dp"
+                    android:text="패스트\n푸드"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="127dp"
+                    android:padding="5dp"
+                    android:text="기타"
+                    android:textColor="@color/kiosk_black_01"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,21 +153,138 @@
             android:textSize="26dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="next"
-            android:layout_gravity="end"/>
-
     </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rank_RecyclerView2"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_type_list" />
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@color/kiosk_white">
 
+        <ImageView
+            android:id="@+id/rank1_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/pngwing_com"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rank_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="80dp"
+            android:text="맥도날드"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/rank1_img"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rank_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="프랜차이즈"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/rank_title"
+            app:layout_constraintTop_toTopOf="@+id/rank_title"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@color/kiosk_white">
+
+        <ImageView
+            android:id="@+id/rank2_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/twosome"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rank2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="80dp"
+            android:text="투썸플레이스"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/rank2_img"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="카페"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/rank2_title"
+            app:layout_constraintTop_toTopOf="@+id/rank2_title"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@color/kiosk_white">
+
+        <ImageView
+            android:id="@+id/rank3_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/subway"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rank3_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="80dp"
+            android:text="서브웨이"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/rank3_img"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="프랜차이즈"
+            android:textColor="@color/kiosk_black_01"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/rank3_title"
+            app:layout_constraintTop_toTopOf="@+id/rank3_title"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

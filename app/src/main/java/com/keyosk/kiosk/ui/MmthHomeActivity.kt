@@ -1,6 +1,7 @@
 package com.keyosk.kiosk.ui
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,6 +21,7 @@ class MmthHomeActivity : AppCompatActivity() {
 
         mmthforhere = findViewById<Button>(R.id.mmth_forhere)
         mmthtogo = findViewById<Button>(R.id.mmth_togo)
+
 
         // 메뉴 화면으로 이동
         val mmthforhere: Button = findViewById(R.id.mmth_forhere)

@@ -33,21 +33,21 @@
 
                     <ImageView
                         android:id="@+id/mmth_Decof_ameri_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/ameri"
                         android:padding="16dp" />
 
                     <TextView
                         android:id="@+id/mmth_Decof_ameri_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:gravity="left"
-                        android:text="아메리카노"
+                        android:text="디카페인\n아메리카노"
                         android:textColor="@color/kiosk_black_01"
-                        android:textSize="11sp" />
+                        android:textSize="8sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -85,20 +85,20 @@
 
                     <ImageView
                         android:id="@+id/mmth_Decof_latte_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/ameri"
                         android:padding="16dp" />
 
                     <TextView
                         android:id="@+id/mmth_Decof_latte_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
-                        android:text="꿀커피"
+                        android:text="디카페인\n꿀커피"
                         android:textColor="@color/kiosk_black_01"
-                        android:textSize="11sp" />
+                        android:textSize="8sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

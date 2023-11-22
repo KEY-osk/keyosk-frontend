@@ -33,9 +33,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_ice_VanillaCrumbleIceCreamLatte_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/vanillacream"
                         android:padding="16dp" />
 
                     <TextView
@@ -85,9 +85,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_ice_JejuSmoothie_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/hanlabong"
                         android:padding="16dp" />
 
                     <TextView

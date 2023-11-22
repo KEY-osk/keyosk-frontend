@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/btn_invisible_black"
+    android:background="@color/primaryColor"
     android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:orientation="vertical"
         android:paddingTop="5dp">
@@ -50,8 +50,8 @@
 
                     <ImageButton
                         android:id="@+id/mmth_minusBtn"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_marginRight="5dp"
                         android:background="@drawable/btn_style"
                         android:scaleType="fitCenter"
@@ -80,8 +80,8 @@
 
                     <ImageButton
                         android:id="@+id/mmth_plusBtn"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:background="@drawable/btn_style"
@@ -146,6 +146,7 @@
                     android:textColor="@color/kiosk_black_01"
                     android:textSize="11dp" />
 
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -175,6 +176,7 @@
                         android:textSize="10dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/mmth_optionPlusMenu"
                 android:layout_width="match_parent"
@@ -191,8 +193,8 @@
                         android:layout_height="16dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="2dp"
-                        android:scaleType="fitCenter"
-                        android:background="@drawable/arrow" />
+                        android:background="@drawable/arrow"
+                        android:scaleType="fitCenter" />
 
                     <TextView
                         android:id="@+id/mmth_optionPlusShot"

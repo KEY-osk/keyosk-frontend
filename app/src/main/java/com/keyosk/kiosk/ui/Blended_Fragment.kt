@@ -4,7 +4,6 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -78,49 +77,7 @@ class Blended_Fragment : Fragment() {
                 resources.getResourceEntryName(linearLayoutId), text!!, price!!, imageDrawable!!
             )
             dialog.show(activity?.supportFragmentManager!!, "CustomDialog")
-
-            // 터치 이벤트 처리
-            linearLayout.setOnTouchListener { _, event ->
-                val x = event.x
-                val y = event.y
-
-                when (event.action) {
-                    MotionEvent.ACTION_DOWN -> {
-                        // 사용자가 화면에 손가락을 댔을 때의 작업 수행
-                    }
-                    MotionEvent.ACTION_MOVE -> {
-                        // 사용자가 화면에서 손가락을 움직였을 때의 작업 수행
-                    }
-                    MotionEvent.ACTION_UP -> {
-                        // 사용자가 손가락을 화면에서 떼었을 때의 작업 수행
-
-                        // 터치 좌표를 서버로 전송
-                        sendTouchCoordinatesToServer(x, y)
-                    }
-                }
-                true
-            }
         }
+
     }
-        }
-
-        val touchService = ApiClient.touchService
-
-        fun sendTouchCoordinatesToServer(x: Float, y: Float) {
-            val touchApiService = ApiClient.touchService
-
-            val call: Call<Void> = touchService.sendTouchCoordinates(x, y)
-            call.enqueue(object : Callback<Void> {
-                override fun onResponse(call: Call<Void>, response: Response<Void>) {
-                    if (response.isSuccessful) {
-                        // 터치 좌표 전송 성공
-                    } else {
-                        // 터치 좌표 전송 실패
-                    }
-                }
-
-                override fun onFailure(call: Call<Void>, t: Throwable) {
-                    // 네트워크 오류 또는 예외 발생 시 처리
-                }
-            })
-        }
+}

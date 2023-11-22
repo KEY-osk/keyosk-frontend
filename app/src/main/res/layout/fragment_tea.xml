@@ -33,9 +33,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_Tea1_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/yuja"
                         android:padding="16dp" />
 
                     <TextView
@@ -45,7 +45,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:gravity="left"
-                        android:text="티1"
+                        android:text="유자차"
                         android:textColor="@color/kiosk_black_01"
                         android:textSize="11sp" />
 
@@ -58,7 +58,7 @@
                             android:id="@+id/mmth_Tea1_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2,300"
+                            android:text="3,500"
                             android:textColor="@color/kiosk_black_01"
                             android:textSize="11sp" />
 
@@ -87,7 +87,7 @@
                         android:id="@+id/mmth_Tea2_img"
                         android:layout_width="35dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/lemontea"
                         android:padding="16dp" />
 
                     <TextView
@@ -96,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:text="티2"
+                        android:text="레몬차"
                         android:textColor="@color/kiosk_black_01"
                         android:textSize="11sp" />
 
@@ -109,7 +109,7 @@
                             android:id="@+id/mmth_Tea2_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3,000"
+                            android:text="3,500"
                             android:textColor="@color/kiosk_black_01"
                             android:textSize="11sp" />
 

@@ -92,20 +92,115 @@
                 app:layout_constraintStart_toEndOf="@id/fastfood_category"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/btn_next"
-                android:layout_width="45dp"
-                android:layout_height="44dp"
-                android:text=">"
-                android:textStyle="bold" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/category_RecyclerView"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_category_cafe_list" />
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/kiosk_white">
+
+            <ImageView
+                android:id="@+id/cafe1_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/mammoth2"
+                tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/mmth_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_invisible" />
+
+            <TextView
+                android:id="@+id/cafe1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="매머드익스프레스"
+                android:textColor="@color/kiosk_black_01"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/rank1_img"
+                tools:ignore="MissingConstraints" />
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/kiosk_white">
+
+            <ImageView
+                android:id="@+id/cafe2_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:src="@drawable/hollys"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/cafe2_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="할리스커피"
+                android:textColor="@color/kiosk_black_01"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/rank1_img"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/kiosk_white">
+
+            <ImageView
+                android:id="@+id/cafe3_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:src="@drawable/twosome"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/cafe3_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="투썸플레이스"
+                android:textColor="@color/kiosk_black_01"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/rank1_img"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/category_RecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            tools:listitem="@layout/item_category_cafe_list" />-->
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

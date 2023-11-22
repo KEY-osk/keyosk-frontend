@@ -33,9 +33,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_ameri_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/ameri"
                         android:padding="16dp" />
 
                     <TextView
@@ -58,7 +58,7 @@
                             android:id="@+id/mmth_ameri_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1500"
+                            android:text="2300"
                             android:textColor="@color/kiosk_black_01"
                             android:textSize="11sp" />
 
@@ -85,9 +85,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_latte_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/ameri"
                         android:padding="16dp" />
 
                     <TextView
@@ -96,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:text="카페라떼"
+                        android:text="꿀커피"
                         android:textColor="@color/kiosk_black_01"
                         android:textSize="9sp" />
 

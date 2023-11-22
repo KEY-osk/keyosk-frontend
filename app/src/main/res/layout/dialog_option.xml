@@ -134,12 +134,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/mmth_mainMenuPrice"
+                    android:id="@+id/mmth_optionMenuPrice"
                     android:layout_width="70dp"
                     android:layout_height="20dp"
                     android:background="@color/kiosk_grey_01"
                     android:gravity="right"
-                    android:text="100"
+                    android:text="3000"
                     android:textColor="@color/kiosk_black_01"
                     android:textSize="16sp" />
 
@@ -152,12 +152,12 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/mmth_optionMenuPrice"
+                    android:id="@+id/mmth_mainMenuPrice"
                     android:layout_width="70dp"
                     android:layout_height="20dp"
                     android:background="@color/kiosk_grey_01"
                     android:gravity="right"
-                    android:text="100"
+                    android:text="400"
                     android:textColor="@color/kiosk_black_01"
                     android:textSize="16sp" />
 
@@ -175,7 +175,7 @@
                     android:layout_height="20dp"
                     android:background="@color/kiosk_grey_01"
                     android:gravity="right"
-                    android:text="100"
+                    android:text="3000"
                     android:textColor="@color/kiosk_black_01"
                     android:textSize="14sp" />
 
@@ -353,16 +353,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-
-            <TextView
+            <RadioButton
                 android:id="@+id/mmth_basic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
-                android:text="샷 추가"
-                android:textColor="@color/kiosk_black_01"
-                android:textSize="16dp" />
+                android:layout_weight="1"
+                android:text="샷 추가" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -399,30 +395,13 @@
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/ic_minus2"
-                    android:gravity="center" />
-
                 <TextView
                     android:id="@+id/mmth_shotprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="400"
                     android:textColor="@color/kiosk_black_01" />
 
-                <Button
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/ic_plus2"
-                    android:gravity="center" />
             </LinearLayout>
 
         </LinearLayout>

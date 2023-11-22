@@ -33,9 +33,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_NonCoffee1_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/cornlatte"
                         android:padding="16dp" />
 
                     <TextView
@@ -45,7 +45,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:gravity="left"
-                        android:text="논커피1"
+                        android:text="옥수수라떼"
                         android:textColor="@color/kiosk_black_01"
                         android:textSize="11sp" />
 
@@ -58,7 +58,7 @@
                             android:id="@+id/mmth_NonCoffee1_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2,300"
+                            android:text="4,500"
                             android:textColor="@color/kiosk_black_01"
                             android:textSize="11sp" />
 
@@ -85,9 +85,9 @@
 
                     <ImageView
                         android:id="@+id/mmth_NonCoffee2_img"
-                        android:layout_width="35dp"
+                        android:layout_width="40dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/ic_launcher_foreground"
+                        android:background="@drawable/chocolatte"
                         android:padding="16dp" />
 
                     <TextView
@@ -96,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
-                        android:text="논커피2"
+                        android:text="초코라떼"
                         android:textColor="@color/kiosk_black_01"
                         android:textSize="11sp" />
 
@@ -109,7 +109,7 @@
                             android:id="@+id/mmth_NonCoffee2_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="3,000"
+                            android:text="5,000"
                             android:textColor="@color/kiosk_black_01"
                             android:textSize="11sp" />
 
